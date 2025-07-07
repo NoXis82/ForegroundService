@@ -13,6 +13,7 @@ class RunningApp: Application() {
             "Running notification",
             NotificationManager.IMPORTANCE_HIGH
         )
+        channel.enableVibration(true)
         val notificationManager = getSystemService(NotificationManager::class.java)
         notificationManager.createNotificationChannel(channel)
     }
